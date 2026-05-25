@@ -1,0 +1,80 @@
+<svg width="980" height="560" viewBox="0 0 980 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Modelo do grafo Neo4j para e-commerce</title>
+  <desc id="desc">Diagrama com labels Cliente, Pedido, Produto e Categoria, incluindo relacionamentos REALIZOU, CONTEM, PERTENCE_A, AVALIOU e SIMILAR_A.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#334155"/>
+    </marker>
+    <style>
+      .bg { fill: #f8fafc; }
+      .node { stroke: #0f172a; stroke-width: 2; }
+      .cliente { fill: #dbeafe; }
+      .pedido { fill: #dcfce7; }
+      .produto { fill: #fef3c7; }
+      .categoria { fill: #fce7f3; }
+      .title { font: 700 24px Arial, sans-serif; fill: #0f172a; }
+      .label { font: 700 18px Arial, sans-serif; fill: #0f172a; }
+      .props { font: 13px Arial, sans-serif; fill: #334155; }
+      .rel { font: 700 13px Arial, sans-serif; fill: #1e293b; }
+      .line { stroke: #334155; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+      .line-soft { stroke: #64748b; stroke-width: 2.2; fill: none; marker-end: url(#arrow); stroke-dasharray: 7 5; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="980" height="560" rx="0"/>
+  <text x="40" y="54" class="title">Modelo do Grafo - Recomendacoes para E-commerce</text>
+
+  <line x1="228" y1="170" x2="370" y2="170" class="line"/>
+  <text x="258" y="151" class="rel">REALIZOU</text>
+
+  <line x1="568" y1="170" x2="710" y2="170" class="line"/>
+  <text x="614" y="151" class="rel">CONTEM</text>
+
+  <line x1="818" y1="245" x2="818" y2="340" class="line"/>
+  <text x="835" y="298" class="rel">PERTENCE_A</text>
+
+  <path d="M176 240 C250 360, 620 360, 750 245" class="line-soft"/>
+  <text x="390" y="344" class="rel">AVALIOU</text>
+
+  <path d="M895 165 C955 130, 955 235, 895 205" class="line-soft"/>
+  <text x="892" y="118" class="rel">SIMILAR_A</text>
+
+  <g transform="translate(50 110)">
+    <rect width="178" height="130" rx="8" class="node cliente"/>
+    <text x="24" y="36" class="label">Cliente</text>
+    <text x="24" y="64" class="props">clienteId</text>
+    <text x="24" y="84" class="props">nome</text>
+    <text x="24" y="104" class="props">cidade, estado</text>
+  </g>
+
+  <g transform="translate(370 110)">
+    <rect width="198" height="130" rx="8" class="node pedido"/>
+    <text x="24" y="36" class="label">Pedido</text>
+    <text x="24" y="64" class="props">pedidoId</text>
+    <text x="24" y="84" class="props">data</text>
+    <text x="24" y="104" class="props">canal, status</text>
+  </g>
+
+  <g transform="translate(710 110)">
+    <rect width="188" height="135" rx="8" class="node produto"/>
+    <text x="24" y="36" class="label">Produto</text>
+    <text x="24" y="64" class="props">produtoId</text>
+    <text x="24" y="84" class="props">nome</text>
+    <text x="24" y="104" class="props">marca, preco</text>
+  </g>
+
+  <g transform="translate(710 340)">
+    <rect width="188" height="125" rx="8" class="node categoria"/>
+    <text x="24" y="36" class="label">Categoria</text>
+    <text x="24" y="64" class="props">categoriaId</text>
+    <text x="24" y="84" class="props">nome</text>
+    <text x="24" y="104" class="props">departamento</text>
+  </g>
+
+  <g transform="translate(72 408)">
+    <text x="0" y="0" class="rel">Relacionamentos com propriedades</text>
+    <text x="0" y="26" class="props">CONTEM: quantidade, precoUnitario, valorTotal</text>
+    <text x="0" y="48" class="props">AVALIOU: nota, comentario, data</text>
+    <text x="0" y="70" class="props">SIMILAR_A: peso, motivo</text>
+  </g>
+</svg>

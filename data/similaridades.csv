@@ -1,0 +1,7 @@
+produtoOrigemId,produtoDestinoId,peso,motivo
+P001,P002,0.72,Mesma categoria e marca
+P003,P004,0.64,Acessorios comprados juntos
+P005,P007,0.58,Perfil gamer
+P006,P008,0.61,Setup de escritorio
+P001,P008,0.55,Setup profissional
+P002,P003,0.49,Compra inicial de tecnologia

@@ -1,0 +1,9 @@
+pedidoId,clienteId,data,canal,status
+O1001,C001,2026-01-10,Site,Entregue
+O1002,C002,2026-01-12,App,Entregue
+O1003,C003,2026-01-20,Site,Entregue
+O1004,C001,2026-02-04,App,Entregue
+O1005,C004,2026-02-10,Site,Entregue
+O1006,C005,2026-02-18,Marketplace,Entregue
+O1007,C006,2026-03-01,Site,Entregue
+O1008,C004,2026-03-08,App,Entregue

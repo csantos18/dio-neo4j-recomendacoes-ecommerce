@@ -1,0 +1,9 @@
+produtoId,nome,marca,preco,categoriaId
+P001,Notebook Pro 14,TechOne,5200.00,CAT01
+P002,Notebook Starter 15,TechOne,3100.00,CAT01
+P003,Mouse Sem Fio,ClickMax,120.00,CAT02
+P004,Teclado Mecanico,KeyLab,350.00,CAT02
+P005,Headset Gamer,SoundPlay,280.00,CAT05
+P006,Cadeira Ergonomica,OfficeUp,890.00,CAT04
+P007,Controle Bluetooth,GameHub,240.00,CAT03
+P008,Monitor 27 Polegadas,ViewPro,1450.00,CAT04
